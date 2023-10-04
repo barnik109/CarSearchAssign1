@@ -1,3 +1,13 @@
+## Video Demo
+
+<video width="640" height="360" controls>
+  <source src="public/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+...
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
