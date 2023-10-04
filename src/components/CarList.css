@@ -1,0 +1,160 @@
+/* src/components/CarList.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.car-card {
+    width: 350px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.car-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.car-details {
+    background-color: white;
+    padding: 15px;
+}
+
+.car-details h2 {
+    font-size: 18px;
+    float: left;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+}
+
+.car-details h3 {
+    border: 1px dashed rgb(12, 197, 197);
+    margin-top: 7px;
+    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.car-details .features {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin-top: 2px;
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+.features .User,
+.features .petrol,
+.features .speed,
+.features .gear {
+    width: 48%;
+    font-size: 13px;
+    margin-top: 10px;
+    color: grey;
+    background-color: white;
+}
+
+.features .petrol {
+    float: right;
+}
+
+.features .User {
+    float: left;
+}
+
+.avg-price {
+    font-size: 15px;
+    color: #333;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 0px;
+    align-items: center;
+    width: 30%;
+}
+
+.price {
+    background-color: white;
+    font: bold;
+    font-size: x-large;
+}
+
+.checklist {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin-top: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding: 10px 10px;
+}
+
+.checklist .avg-price {
+    margin-right: auto;
+    font-size: small;
+    margin-left: 5px;
+   
+}
+
+.checklist .buttons {
+    margin-left: auto;
+   
+}
+
+.checklist button {
+    margin-left: 15px;
+    font-size: smaller;
+    padding: auto;
+    width: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+.checklist .love-react-btn {
+    width: 40px;
+    height: 30px;
+    background-color: #b2d4d9;
+}
+
+.checklist .rent-now-btn {
+    width: 80px;
+    height: 30px;
+    background-color: #2f9fd6;
+    text-emphasis: bold;
+    font-size: 12px;
+    font: bolder;
+    padding: auto;
+}
